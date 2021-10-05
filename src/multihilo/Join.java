@@ -3,8 +3,8 @@ package multihilo;
 public class Join {
 
 	public static void main(String[] args) {
-		Thread hilo1 = new Thread(new Tarea(1));
-		Thread hilo2 = new Thread(new Tarea(2));
+		Thread hilo1 = new Thread(new Tarea());
+		Thread hilo2 = new Thread(new Tarea());
 
 		try {
 			
