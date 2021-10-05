@@ -3,6 +3,10 @@ package multihilo;
 public class Tarea extends Thread implements Runnable{
 	public Tarea() {}
 	
+	public Tarea(String nombre) {
+		this.setName(nombre);
+	}
+	
 	@Override
 	public void run() {
 		for(int i = 0; i < 10; i++) {

@@ -1,9 +1,14 @@
 package multihilo;
 
-public class TareaAlive extends Thread implements Runnable{
+public class TareaAlive extends Tarea implements Runnable{
 	Thread otroHilo;
 	
 	public TareaAlive(Thread otroHilo) {
+		this.otroHilo = otroHilo;
+	}
+	
+	public TareaAlive(Thread otroHilo, String nombre) {
+		super(nombre);
 		this.otroHilo = otroHilo;
 	}
 	
